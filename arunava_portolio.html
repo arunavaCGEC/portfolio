@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunava Ghosh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            transition: background 0.5s, color 0.5s;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .contact-header {
+            background: #444;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+        .contact-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .contact-header a:hover {
+            color: #ddd;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        #dark-mode-toggle {
+            cursor: pointer;
+            background: #fff;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        #dark-mode-toggle:hover {
+            background: #ddd;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.5s, color 0.5s;
+        }
+        .dark-mode section {
+            background: #222;
+        }
+        .project {
+            background: #eee;
+            padding: 1rem;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .dark-mode .project {
+            background: #444;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: rgb(228, 217, 217);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-header">
+        <a href="arunava40cse@gmail.com">📧 Gmail</a>
+        <a href="tel:7076481192">📞 Phone</a>
+        <a href="https://www.linkedin.com/in/arunava-ghosh-cse-66b2b1300?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp%2F5%2BpBbESw23yVQIW3llDw%3D%3D">🔗 LinkedIn</a>
+    </div>
+    <header>
+        <h1>Arunava Ghosh</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate about AI, mathematics, and embedded systems. Exploring the intersection of software and hardware.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AI-based Classification Model</h3>
+            <p>Developed an AI model to classify astronomical objects using machine learning.</p>
+        </div>
+        <div class="project">
+            <h3>Embedded System for Space Tech</h3>
+            <p>Designed a real-time embedded system for satellite data processing.</p>
+        </div>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="C:\Users\adity\Downloads\ATS simple food service resume.docx" download>Download Resume</a>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Arunava Ghosh</p>
+    </footer>
+    
+    <script>
+        document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
